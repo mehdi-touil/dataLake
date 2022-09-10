@@ -1,0 +1,23 @@
+[2022-09-09T15:55:34.866+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: excel_transform.excel_transform manual__2022-09-09T15:54:58.146805+00:00 [queued]>
+[2022-09-09T15:55:34.947+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: excel_transform.excel_transform manual__2022-09-09T15:54:58.146805+00:00 [queued]>
+[2022-09-09T15:55:34.948+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-09T15:55:34.948+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2022-09-09T15:55:34.949+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-09T15:55:35.040+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): excel_transform> on 2022-09-09 15:54:58.146805+00:00
+[2022-09-09T15:55:35.051+0000] {standard_task_runner.py:52} INFO - Started process 768 to run task
+[2022-09-09T15:55:35.056+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'excel_transform', 'excel_transform', 'manual__2022-09-09T15:54:58.146805+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/dag_task.py', '--cfg-path', '/tmp/tmpz9i8fx4f', '--error-file', '/tmp/tmpv553rsel']
+[2022-09-09T15:55:35.059+0000] {standard_task_runner.py:80} INFO - Job 3: Subtask excel_transform
+[2022-09-09T15:55:35.295+0000] {task_command.py:371} INFO - Running <TaskInstance: excel_transform.excel_transform manual__2022-09-09T15:54:58.146805+00:00 [running]> on host 60d88aec8eca
+[2022-09-09T15:55:35.725+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=excel_transform
+AIRFLOW_CTX_TASK_ID=excel_transform
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-09T15:54:58.146805+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-09T15:54:58.146805+00:00
+[2022-09-09T15:55:35.912+0000] {python.py:173} INFO - Done. Returned value was: {"a":{"0":0,"1":1,"2":2,"3":3,"4":4,"5":5,"6":6,"7":7,"8":8,"9":9},"b":{"0":50,"1":51,"2":52,"3":53,"4":54,"5":55,"6":56,"7":57,"8":58,"9":59},"c":{"0":100,"1":101,"2":102,"3":103,"4":104,"5":105,"6":106,"7":107,"8":108,"9":109},"d":{"0":"15:55:35.886670","1":"15:55:35.886677","2":"15:55:35.886679","3":"15:55:35.886681","4":"15:55:35.886682","5":"15:55:35.886684","6":"15:55:35.886686","7":"15:55:35.886687","8":"15:55:35.886689","9":"15:55:35.886691"}}
+[2022-09-09T15:55:35.988+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=excel_transform, task_id=excel_transform, execution_date=20220909T155458, start_date=20220909T155534, end_date=20220909T155535
+[2022-09-09T15:55:36.126+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-09T15:55:36.217+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
